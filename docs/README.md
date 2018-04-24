@@ -9,9 +9,11 @@ Generative adversarial networks (GANs) are a class of artificial intelligence al
 
 ## What is easyGAN?
 
-easyGAN is a python module which offer an opportunity to try DCGAN easily.
+easyGAN is a python module which offers an opportunity to try DCGAN easily.
 
 ## Install
+
+[pypi-easyGAN](https://pypi.org/project/easygan/)
 
 ```zsh
 $ pip install easygan
