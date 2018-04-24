@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>easyGAN</title>
+    <meta name="description" content="GAN for everyone">
+    
+    
+    <link rel="preload" href="/easyGAN/assets/css/4.styles.cf16f62b.css" as="style"><link rel="preload" href="/easyGAN/assets/js/app.3f350a5d.js" as="script"><link rel="preload" href="/easyGAN/assets/js/1.3c9db888.js" as="script"><link rel="preload" href="/easyGAN/assets/js/2.eae6bafc.js" as="script"><link rel="prefetch" href="/easyGAN/assets/js/0.17b7dd22.js"><link rel="prefetch" href="/easyGAN/assets/js/3.e0e8f0aa.js">
+    <link rel="stylesheet" href="/easyGAN/assets/css/4.styles.cf16f62b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/easyGAN/" class="home-link router-link-exact-active router-link-active"><!----><span class="site-name">
+      easyGAN
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/easyGAN/" class="nav-link router-link-exact-active router-link-active">Home</a></div><div class="nav-item"><a href="/easyGAN/about/" class="nav-link">About</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/easyGAN/" class="nav-link router-link-exact-active router-link-active">Home</a></div><div class="nav-item"><a href="/easyGAN/about/" class="nav-link">About</a></div><!----></nav><ul class="sidebar-links"><li><a href="/easyGAN/" class="active sidebar-link">Home</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/easyGAN/#what-is-gan" class="sidebar-link">What is GAN?</a></li><li class="sidebar-sub-header"><a href="/easyGAN/#what-is-easygan" class="sidebar-link">What is easyGAN?</a></li><li class="sidebar-sub-header"><a href="/easyGAN/#install" class="sidebar-link">Install</a></li><li class="sidebar-sub-header"><a href="/easyGAN/#how-to-use" class="sidebar-link">How to Use</a></li></ul></li><li><a href="/easyGAN/about/" class="sidebar-link">About</a></li></ul></div><div class="home"><div class="hero"><!----><h1>easyGAN</h1><p class="description">
+      GAN for everyone
+    </p><!----></div><!----><div class="content custom"><h2 id="what-is-gan"><a href="#what-is-gan" aria-hidden="true" class="header-anchor">#</a> What is GAN?</h2><p>GAN stands for Generative adversarial network.<br>
+Generative adversarial networks (GANs) are a class of artificial intelligence algorithms used in unsupervised machine learning, implemented by a system of two neural networks contesting with each other in a zero-sum game framework. They were introduced by Ian Goodfellow et al. in 2014.[1] This technique can generate photographs that look at least superficially authentic to human observers, having many realistic characteristics (though in tests people can tell real from generated in many cases).[2]<a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">from wikipedia</a></p><h2 id="what-is-easygan"><a href="#what-is-easygan" aria-hidden="true" class="header-anchor">#</a> What is easyGAN?</h2><p>easyGAN is a python module which offers an opportunity to try DCGAN easily.</p><h2 id="install"><a href="#install" aria-hidden="true" class="header-anchor">#</a> Install</h2><p><a href="https://pypi.org/project/easygan/" target="_blank" rel="noopener noreferrer">pypi-easyGAN</a></p><pre class="language-text"><code>$ pip install easygan
+</code></pre><h2 id="how-to-use"><a href="#how-to-use" aria-hidden="true" class="header-anchor">#</a> How to Use</h2><p>easyGAN has two features. One is to collect images from the internet.<br>
+The other is to run DCGAN with images collected by easygan command.</p><h3 id="collect-images"><a href="#collect-images" aria-hidden="true" class="header-anchor">#</a> Collect Images</h3><pre class="language-text"><code>$ easygan --search &quot;google&quot; --keyword &quot;puppy&quot; --folder &quot;puppies&quot;
+
+--search: search engine(currently easygan only suppoprts google image search. will support flickr soon.)
+
+--keyword: search query You can put anything you want.
+If you want to use multiple keywords, you need to input the following.
+
+--keyword &quot;NYC food&quot;
+
+--folder: This will be used as a folder name which easygan saves images.
+</code></pre><h3 id="run-dcgan"><a href="#run-dcgan" aria-hidden="true" class="header-anchor">#</a> Run DCGAN</h3><p>This phase will take much time if you don't have GPU.<br>
+If you run this command successfully, easygan will create the folder, &quot;results&quot; the place you run easygan.</p><pre class="language-text"><code>$ easygan --folder &quot;puppies&quot; --batch 55
+
+--folder: This must be the folder name which has images
+If you collect images by yourself and save them in a specific folder, you need to input the name.
+
+--batch: This is batch size.
+</code></pre><h3 id="example"><a href="#example" aria-hidden="true" class="header-anchor">#</a> Example</h3><p><div><p>These gif are made by iamges which are related to art.</p><a href="https://github.com/sleepy-maker/Art-DCGAN">Art-GAN</a><br><br><img src="/easyGAN/assets/img/art.0fb188df.gif"><img src="/easyGAN/assets/img/generative_ver.b1113f23.gif"></div></p></div><!----></div></div></div>
+    <script src="/easyGAN/assets/js/1.3c9db888.js" defer></script><script src="/easyGAN/assets/js/2.eae6bafc.js" defer></script><script src="/easyGAN/assets/js/app.3f350a5d.js" defer></script>
+  </body>
+</html>
