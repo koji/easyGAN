@@ -15,7 +15,7 @@ easyGAN is a python module which offers an opportunity to try DCGAN easily.
 
 [pypi-easyGAN](https://pypi.org/project/easygan/)
 
-```zsh
+```bash
 $ pip install easygan
 ```
 
@@ -26,7 +26,7 @@ The other is to run DCGAN with images collected by easygan command.
 
 ### Collect Images
 
-```zsh
+```bash
 $ easygan --search "google" --keyword "puppy" --folder "puppies"
 
 --search: search engine(currently easygan only suppoprts google image search. will support flickr soon.)
@@ -44,7 +44,7 @@ If you want to use multiple keywords, you need to input the following.
 This phase will take much time if you don't have GPU.  
 If you run this command successfully, easygan will create the folder, "results" the place you run easygan.
 
-```zsh
+```bash
 $ easygan --folder "puppies" --batch 55
 
 --folder: This must be the folder name which has images
