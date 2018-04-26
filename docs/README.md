@@ -54,11 +54,10 @@ If you collect images by yourself and save them in a specific folder, you need t
 ```
 
 ## ToDo
-- [ ] Flickr API
-- [ ] Bing Image search API
-- [ ] DuckDuckGo Image search
-- [ ] Suppoert ffmpeg for making a video file
-
+□ Flickr API  
+□  Bing Image search API  
+□ DuckDuckGo Image search  
+□ Suppoert ffmpeg for making a video file  
 
 ### Example
 
