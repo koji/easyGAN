@@ -39,6 +39,10 @@ If you want to use multiple keywords, you need to input the following.
 --folder: This will be used as a folder name which easygan saves images.
 ```
 
+::: tip
+Before running DCGAN, probably you need to remove some iamges because still image search results are not super acculate. What you need to do is to remove iamges which are not related to the keyword you put.
+:::
+
 ### Run DCGAN
 
 This phase will take much time if you don't have GPU.  
