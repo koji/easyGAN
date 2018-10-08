@@ -49,7 +49,8 @@ This phase will take much time if you don't have GPU.
 If you run this command successfully, easygan will create the folder, "results" the place you run easygan.
 
 ```bash
-$ easygan --folder "puppies" --batch 55
+if your images jpg
+$ easygan --folder "puppies" --batch 55 --filetype jpg
 
 --folder: This must be the folder name which has images
 If you collect images by yourself and save them in a specific folder, you need to input the name.
@@ -58,10 +59,12 @@ If you collect images by yourself and save them in a specific folder, you need t
 ```
 
 ## ToDo
-□ Flickr API  
-□  Bing Image search API  
-□ DuckDuckGo Image search  
-□ Suppoert ffmpeg for making a video file  
+- [x] .jpg  
+- [ ] Add googleimagesearch info for collecting images
+- [ ] Flickr API  
+- [ ] Bing Image search API  
+- [ ] DuckDuckGo Image search  
+- [ ] Suppoert ffmpeg for making a video file  
 
 ### Example
 
