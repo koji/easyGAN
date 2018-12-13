@@ -50,7 +50,7 @@ If you run this command successfully, easygan will create the folder, "results" 
 
 ```bash
 if your images jpg
-$ easygan --folder "puppies" --batch 55 --filetype jpg
+$ easygan --folder "puppies" --batch 55 --fileformat jpg
 
 --folder: This must be the folder name which has images
 If you collect images by yourself and save them in a specific folder, you need to input the name.
